@@ -458,6 +458,8 @@
     text-shadow: none;
 }
 
+/*TECHNOLOGY*/
+
 #tech .content .wrap .txt-lg {
     z-index: 0;
     overflow: visible;
@@ -573,4 +575,59 @@
     background: #FFFFFF;
     background-size: auto;
     opacity: 1.00;
+}
+
+/*** LEGAL ***/
+
+#legal {
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    background: #000000;
+    opacity: 1;
+}
+
+#legal .content {
+    z-index: 0;
+    overflow: visible;
+    position: relative;
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    opacity: 1;
+}
+
+#legal .content .wrap .copyright {
+    z-index: 0;
+    overflow: visible;
+    position: relative;
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 10px 10px 10px 10px;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    opacity: 1;
+    font: 400 14px/20px OpenSans, Helvetica, Arial;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
 }

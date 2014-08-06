@@ -73,6 +73,7 @@
                 <div class="wrap">
                   <p class="txt-sm">HTML</p>
                 </div>
+
               </div>
               <div class="clear"></div>
             </div>
@@ -126,12 +127,12 @@
             <div class="bar">
               <div class="left">
                 <div class="cvr">
-                  <img class="icon" src="media/tech-html.png" width="192" height="192" alt="HTML"/>
+                  <img class="icon" src="media/tech-python.png" width="192" height="192" alt="Python"/>
                 </div>
               </div>
               <div class="left">
                 <div class="wrap">
-                  <p class="txt-sm">HTML</p>
+                  <p class="txt-sm">Python</p>
                 </div>
               </div>
               <div class="clear"></div>
@@ -141,12 +142,12 @@
             <div class="bar">
               <div class="right">
                 <div class="cvr">
-                  <img class="icon" src="media/tech-css.png" width="192" height="192" alt="CSS"/>
+                  <img class="icon" src="media/tech-php.png" width="192" height="192" alt="PHP"/>
                 </div>
               </div>
               <div class="right">
                 <div class="wrap">
-                  <p class="txt-sm">CSS</p>
+                  <p class="txt-sm">PHP</p>
                 </div>
               </div>
               <div class="clear"></div>
@@ -185,6 +186,33 @@
           <div class="clear"></div>
         </div>
       </div>
+    </div>
+    <div id="portfolio">
+      <div class="content effect slow">
+        <div class="wrap large">
+          <h3 class="txt-xl">Projects</h3>
+          <h4 class="txt-sm">Some of my latest work.</h4>
+        </div>
+        <div class="wrap large">
+          <div class="showcase">
+            <a class="project shadow fast" href="http://www.url.com" target="_blank" data-style="background-image: url(media/project-1.jpg);"></a>
+            <a class="project shadow fast" href="http://www.url.com" target="_blank" data-style="background-image: url(media/project-1.jpg);"></a>
+            <a class="project shadow fast" href="http://www.url.com" target="_blank" data-style="background-image: url(media/project-1.jpg);"></a>
+            <a class="project shadow fast" href="http://www.url.com" target="_blank" data-style="background-image: url(media/project-1.jpg);"></a>
+            <a class="project shadow fast" href="http://www.url.com" target="_blank" data-style="background-image: url(media/project-1.jpg);"></a>
+            <a class="project shadow fast" href="http://www.url.com" target="_blank" data-style="background-image: url(media/project-1.jpg);"></a>
+            <a class="project shadow fast" href="http://www.url.com" target="_blank" data-style="background-image: url(media/project-1.jpg);"></a>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        $(function () {
+          $("#portfolio").find(".showcase").each(function (index) {
+            var that = this;
+            $(that).interact();
+          });
+        });
+      </script>
     </div>
     <div id="exp">
       <div class="content effect slow">

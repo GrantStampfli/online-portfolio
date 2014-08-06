@@ -438,6 +438,23 @@
 
 /*TECH*/
 
+#tech {
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent url(../media/pattern-dark.png) scroll repeat center top;
+    background-size: auto;
+    opacity: 1.00;
+}
+
 #tech .content .wrap .txt-xl {
     z-index: 0;
     overflow: visible;
@@ -445,15 +462,16 @@
     display: block;
     height: auto;
     width: auto;
-    margin: 10px 10px 10px 10px;
+    min-width: 200px;
+    max-width: 50%;
+    margin: 0 auto 0 auto;
     padding: 0;
     outline: 0;
     border: 0;
     border-radius: 0;
     background: transparent;
-    background-size: auto;
-    opacity: 1.00;
-    font: 300 60px/60px 'Open Sans', 'Helvetica Neue', 'Arial';
+    opacity: 1;
+    font: 700 20px/30px OpenSans, Helvetica, Arial;
     color: #FFFFFF;
     text-align: center;
     text-decoration: none;
@@ -579,6 +597,230 @@
 
 /*GO OVER CSS BELOW HERE*/
 
+#portfolio {
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent url(../media/pattern-light.png) scroll repeat center top;
+    background-size: auto;
+    opacity: 1.00;
+}
+
+#portfolio .content {
+    z-index: 0;
+    overflow: visible;
+    position: relative;
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 100px auto 100px auto;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    background-size: auto;
+    opacity: 1.00;
+}
+
+#portfolio .content .wrap .txt-xl {
+    z-index: 0;
+    overflow: visible;
+    position: relative;
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 10px 10px 10px 10px;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    background-size: auto;
+    opacity: 1.00;
+    font: 300 60px/60px 'Open Sans', 'Helvetica Neue', 'Arial';
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+#portfolio .content .wrap .txt-lg {
+    z-index: 0;
+    overflow: visible;
+    position: relative;
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 10px 10px 10px 10px;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    background-size: auto;
+    opacity: 1.00;
+    font: 400 20px/30px 'Open Sans', 'Helvetica Neue', 'Arial';
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+#portfolio .content .wrap .txt-sm {
+    z-index: 0;
+    overflow: visible;
+    position: relative;
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 10px 10px 10px 10px;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    background-size: auto;
+    opacity: 1.00;
+    font: 400 16px/20px 'Open Sans', 'Helvetica Neue', 'Arial';
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+#portfolio .content .wrap .txt-xs {
+    z-index: 0;
+    overflow: visible;
+    position: relative;
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 10px 10px 10px 10px;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    background-size: auto;
+    opacity: 1.00;
+    font: 400 14px/20px 'Open Sans', 'Helvetica Neue', 'Arial';
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+#portfolio .content .wrap .showcase {
+    z-index: 0;
+    overflow: visible;
+    position: relative;
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 10px 10px 10px 10px;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    background-size: auto;
+    opacity: 1.00;
+}
+
+#portfolio .content .wrap .showcase .project.current {
+    z-index: 0;
+    overflow: visible;
+    position: absolute;
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    border-radius: 4px 4px 4px 4px;
+    background: transparent no-repeat scroll center center;
+    background-size: cover;
+    opacity: 1.00;
+}
+
+#portfolio .content .wrap .showcase .project.prev {
+    z-index: 0;
+    overflow: visible;
+    position: absolute;
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    border-radius: 4px 4px 4px 4px;
+    background: transparent no-repeat scroll center center;
+    background-size: cover;
+    opacity: 0.50;
+}
+
+#portfolio .content .wrap .showcase .project.next {
+    z-index: 0;
+    overflow: visible;
+    position: absolute;
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    border-radius: 4px 4px 4px 4px;
+    background: transparent no-repeat scroll center center;
+    background-size: cover;
+    opacity: 0.50;
+}
+
+#portfolio .content .wrap .showcase .project.none {
+    z-index: 0;
+    overflow: visible;
+    position: absolute;
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    border-radius: 4px 4px 4px 4px;
+    background: transparent no-repeat scroll center center;
+    background-size: cover;
+    opacity: 0.00;
+}
+
+#portfolio .content .wrap .showcase .project:hover {
+    z-index: 0;
+    overflow: visible;
+    position: absolute;
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    border-radius: 4px 4px 4px 4px;
+    background: transparent no-repeat scroll center center;
+    background-size: cover;
+    opacity: 1.00;
+}
+
 /*** EXP ***/
 
 #exp {
@@ -625,7 +867,7 @@
     outline: 0;
     border: 0;
     border-radius: 0;
-    background: transparent url(../media/strip.png) scroll repeat-x center center;
+    background: transparent url(media/strip.png) scroll repeat-x center center;
     opacity: 1;
 }
 

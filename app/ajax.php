@@ -113,7 +113,7 @@ class API {
 }
 
 $_API = new API();
-$_API->_MANDRILL["key"] = "YOUR MANDRILL KEY";
+$_API->_MANDRILL["key"] = "Rh1I4yxrpMJoJXUGGXEe8Q";
 $_API->_MANDRILL["secret"] = "";
 ?>
 <?php
@@ -127,7 +127,7 @@ class PROCESS {
 			$subject = strip_tags($_REQUEST["subject"]);
 			$from = strip_tags($_REQUEST["from"]);
 			$fullname = strip_tags($_REQUEST["fullname"]);
-			$to = strip_tags("YOUR MAIL ADDRESS");
+			$to = strip_tags("mail@gstampfli.com");
 			$_API->mandrill($message, $subject, $from, $fullname, $to);
 		}
 		return (0);

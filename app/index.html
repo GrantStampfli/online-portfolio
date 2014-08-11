@@ -205,7 +205,14 @@
           </div>
         </div>
       </div>
-      <script type="text/javascript"></script>
+      <script type="text/javascript">
+        $(function () {
+          $("#portfolio").find(".showcase").each(function (index) {
+            var that = this;
+            $(that).interact();
+          });
+        });
+      </script>
     </div>
     <div id="exp">
       <div class="content effect slow">

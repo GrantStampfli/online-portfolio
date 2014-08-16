@@ -71,111 +71,132 @@
 }
 
 .button {
-    z-index: 0;
-    overflow: visible;
-    position: relative;
-    display: block;
-    height: auto;
-    width: auto;
-    margin: 10px 10px 10px 10px;
-    padding: 20px 20px 20px 20px;
-    outline: 0;
-    border: 0;
-    border-radius: 4px 4px 4px 4px;
-    background: transparent;
-    opacity: 1;
-    font: 400 20px/20px OpenSans, Helvetica, Arial;
-    color: #000000;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: none;
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 0px 10px 0px 10px;
+	padding: 20px 20px 20px 20px;
+	outline: 0;
+	border: 0;
+	border-radius: 13px 13px 13px 13px;
+	background: rgba(0, 0, 0, 0.55);
+	opacity: 1;
+	font: 400 20px/20px OpenSans, Helvetica, Arial;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: none;
 }
 
 .button:hover, .button:active, .button:focus {
-    z-index: 0;
-    overflow: visible;
-    position: relative;
-    display: block;
-    height: auto;
-    width: auto;
-    margin: 10px 10px 10px 10px;
-    padding: 20px 20px 20px 20px;
-    outline: 0;
-    border: 0;
-    border-radius: 4px 4px 4px 4px;
-    background: #CCCCCC;
-    opacity: 1;
-    font: 400 20px/20px OpenSans, Helvetica, Arial;
-    color: #FFFFFF;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: none;
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 0px 10px 0px 10px;
+	padding: 20px 20px 20px 20px;
+	outline: 0;
+	border: 0;
+	border-radius: 13px 13px 13px 13px;
+	background: rgba(75, 75, 75, 0.55);
+	opacity: 1;
+	font: 400 20px/20px OpenSans, Helvetica, Arial;
+	color: #000000;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: none;
 }
 
 .collection {
-    z-index: 0;
-    overflow: visible;
-    position: relative;
-    display: block;
-    height: auto;
-    width: auto;
-    margin: 10px 10px 10px 10px;
-    padding: 20px 20px 20px 20px;
-    outline: 0;
-    border: 0;
-    border-radius: 4px 4px 4px 4px;
-    background: #EEEEEE;
-    opacity: 1;
+	z-index: 10;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 15px 10px 5px 10px;
+	padding: 20px 20px 20px 20px;
+	outline: 0;
+	border: 0;
+	border-radius: 13px 13px 13px 13px;
+	background: rgba(0, 0, 0, 0.55);
+}
+
+.collection:hover, .collection:active, .collection:focus{
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 15px 10px 5px 10px;
+	padding: 20px 20px 20px 20px;
+	outline: 0;
+	border: 0;
+	border-radius: 13px 13px 13px 13px;
+	background: rgba(75, 75, 75, 1);
+	opacity: 1;
+	font: 400 20px/20px OpenSans, Helvetica, Arial;
+	color: #000000;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: none;
 }
 
 .field {
-    z-index: 0;
-    overflow: visible;
-    position: relative;
-    display: block;
-    height: auto;
-    min-height: 0;
-    max-height: none;
-    width: auto;
-    min-width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    border: 0;
-    border-radius: 0;
-    background: transparent;
-    opacity: 1;
-    font: 400 14px/20px OpenSans, Helvetica, Arial;
-    color: #000000;
-    text-align: left;
-    text-decoration: none;
-    text-shadow: none;
+	clear: both;
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	min-height: 0;
+	max-height: none;
+	width: auto;
+	min-width: 100%;
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+	font: 400 14px/20px OpenSans, Helvetica, Arial;
+	color: #FFFFFF;
+	text-align: left;
+	text-decoration: none;
+	text-shadow: none;
 }
 
 .area {
-    z-index: 0;
-    overflow: visible;
-    position: relative;
-    display: block;
-    height: auto;
-    min-height: 100px;
-    max-height: none;
-    width: auto;
-    min-width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    border: 0;
-    border-radius: 0;
-    background: transparent;
-    opacity: 1;
-    font: 400 14px/20px OpenSans, Helvetica, Arial;
-    color: #000000;
-    text-align: left;
-    text-decoration: none;
-    text-shadow: none;
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	min-height: 100px;
+	max-height: none;
+	width: auto;
+	min-width: 100%;
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+	font: 400 14px/20px OpenSans, Helvetica, Arial;
+	color: #FFFFFF;
+	text-align: left;
+	text-decoration: none;
+	text-shadow: none;
 }
 
 .shadow {
@@ -1395,9 +1416,9 @@
     padding: 0;
     outline: 0;
     border: 0;
-    border-radius: 0px 0px 70px 70px;
-    background: #FFFFFF;
-    opacity: 1;
+    border-radius: 0px 0px 50px 50px;
+    background: transparent url(../media/pattern-dark.png) repeat scroll center top;
+    opacity: .8;
 }
 
 #contact .content {
@@ -1407,13 +1428,14 @@
     display: block;
     height: auto;
     width: auto;
-    margin: 100px auto 100px auto;
+    margin: 80px auto 50px auto;
     padding: 0;
     outline: 0;
     border: 0;
     border-radius: 0;
     background: transparent;
     opacity: 1;
+	max-width: 800px;
 }
 
 #contact .content .wrap .box {
@@ -1428,79 +1450,77 @@
     outline: 0;
     border: 0;
     border-radius: 0;
-    background: transparent url(../media/strip.png) scroll repeat-x center center;
+    background: transparent;
     opacity: 1;
 }
 
 #contact .content .wrap .box .topic {
-    z-index: 0;
-    overflow: visible;
-    position: relative;
-    display: block;
-    height: auto;
-    width: auto;
-    min-width: 200px;
-    max-width: 50%;
-    margin: 0 auto 0 auto;
-    padding: 0;
-    outline: 0;
-    border: 0;
-    border-radius: 0;
-    background: #FFFFFF;
-    opacity: 1;
-    font: 700 20px/30px OpenSans, Helvetica, Arial;
-    color: #000000;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: none;
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 10px 10px 10px 10px;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+	font: 700 50px/30px OpenSans, Helvetica, Arial;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: none;
 }
 
 #contact .content .wrap .data {
-    z-index: 0;
-    overflow: visible;
-    position: relative;
-    display: block;
-    height: auto;
-    width: auto;
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    border: 0;
-    border-radius: 0;
-    background: transparent;
-    opacity: 1;
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
 }
 
 #contact .content .wrap .coverage {
-    z-index: 0;
-    overflow: visible;
-    position: relative;
-    display: block;
-    height: auto;
-    width: auto;
-    margin: 10px 10px 10px 10px;
-    padding: 0;
-    outline: 0;
-    border: 0;
-    border-radius: 0;
-    background: transparent;
-    opacity: 1;
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 10px 10px 10px 10px;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
 }
 
 #contact .content .wrap .coverage .icon {
-    z-index: 0;
-    overflow: visible;
-    position: relative;
-    display: block;
-    height: 60px;
-    width: 60px;
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    border: 0;
-    border-radius: 30px 30px 30px 30px;
-    background: transparent;
-    opacity: 1;
+	z-index: 0;
+	overflow: visible;
+	position: relative;
+	display: block;
+	height: 60px;
+	width: 60px;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 30px 30px 30px 30px;
+	background: transparent;
+	opacity: 1;
 }
 
 /*** LEGAL ***/

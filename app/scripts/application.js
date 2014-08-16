@@ -1,62 +1,65 @@
+'use strict';
+
 var _DENSITY = 20;
 var _FPS = 30;
 var _OPACITY = 0.25;
-var _COLOR = "#FFFFFF";
+var _COLOR = '#FFFFFF';
 
 (function ($) {
   $.fn.spinload = function (opts) {
     var element = this;
     var spinner = new Spinner({
-      "lines": 10,
-      "length": 10,
-      "width": 5,
-      "radius": 20,
-      "corners": 1,
-      "rotate": 0,
-      "direction": 1,
-      "color": "#FFFFFF",
-      "speed": 1,
-      "trail": 50,
-      "shadow": false,
-      "hwaccel": false,
-      "className": "spinner",
-      "zIndex": 0,
-      "top": "auto",
-      "left": "auto"
-    }).spin($(element).find(".spinload").get(0));
+      'lines': 10,
+      'length': 10,
+      'width': 5,
+      'radius': 20,
+      'corners': 1,
+      'rotate': 0,
+      'direction': 1,
+      'color': '#FFFFFF',
+      'speed': 1,
+      'trail': 50,
+      'shadow': false,
+      'hwaccel': false,
+      'className': 'spinner',
+      'zIndex': 0,
+      'top': 'auto',
+      'left': 'auto'
+    }).spin($(element).find('.spinload').get(0));
     
-    $(window).bind("load", function (event) {
+    $(window).bind('load', function (event) {
       setTimeout(function () {
-        $(element).find(".spinload").remove();
+        $(element).find('.spinload').remove();
       }, 1000);
     });
     return (this);
-  }
+  };
 })(jQuery);
 
 (function ($) {
   $.fn.placeholder = function (opts) {
     var element = this;
 
-    $(window).bind("load", function (event) {
-      $("[placeholder]").each(function (index) {
+    $(window).bind('load', function (event) {
+      $('[placeholder]').each(function (index) {
         var selection = this;
         
-        $(selection).val($(selection).val() == "" ? $(selection).attr("placeholder") : $(selection).val());
+        $(selection).val($(selection).val() === '' ? $(selection).attr('placeholder') : $(selection).val());
       });
-      $("[placeholder]").bind("focus", function (event) {
+      $('[placeholder]').bind('focus', function (event) {
         var selection = this;
         
-        $(selection).val($(selection).val() == $(selection).attr("placeholder") ? "" : $(selection).val());
+        $(selection).val($(selection).val() === $(selection).attr('placeholder') ? '' : $(selection).val());
       });
-      $("[placeholder]").bind("blur", function (event) {
+      $('[placeholder]').bind('blur', function (event) {
         var selection = this;
         
-        $(selection).val($(selection).val() == "" ? $(selection).attr("placeholder") : $(selection).val());
+        $(selection).val($(selection).val() === '' ? $(selection).attr('placeholder') : $(selection).val());
       });
     });
     return (this);
-  }
+  };
+
 })(jQuery);
 
 (function ($) {
@@ -64,32 +67,32 @@ var _COLOR = "#FFFFFF";
     var element = this;
     var status = false;
     
-    $(element).find(".button").bind("click", function (event) {
-      if ($(element).find(".data").find(".field").size() != 0) {
-        $(element).find(".data").find(".field").each(function (index) {
+    $(element).find('.button').bind('click', function (event) {
+      if ($(element).find('.data').find('.field').size() !== 0) {
+        $(element).find('.data').find('.field').each(function (index) {
           var selection = this;
         
-          $(selection).attr("class", $(selection).val() == $(selection).attr("placeholder") ? "field error" : "field");
+          $(selection).attr('class', $(selection).val() === $(selection).attr('placeholder') ? 'field error' : 'field');
         });
       }
-      if ($(element).find(".data").find(".error").size() == 0) {
-        if (status == false) {
+      if ($(element).find('.data').find('.error').size() === 0) {
+        if (status === false) {
           status = true;
           if (html) {
             $.ajax({
-              "url": $(element).find(".data").attr("action"),
-              "type": $(element).find(".data").attr("method"),
-              "data": $(element).find(".data").serialize(),
-              "success": function (data) {                
-                if ($(html).size() != 0) {
-                  $(element).find(".button").replaceWith(html);
+              'url': $(element).find('.data').attr('action'),
+              'type': $(element).find('.data').attr('method'),
+              'data': $(element).find('.data').serialize(),
+              'success': function (data) {                
+                if ($(html).size() !== 0) {
+                  $(element).find('.button').replaceWith(html);
                   status = false;
                 }
               }
             });
           }
           else {
-            $(element).find(".data").submit();
+            $(element).find('.data').submit();
           }
         }
       }
@@ -106,9 +109,9 @@ var _COLOR = "#FFFFFF";
     var fps = _FPS;
     var ratio = Math.round(window.devicePixelRatio ? window.devicePixelRatio : 1);
     var stack = [];
-    var cvs = $(element).find(".animation").get(0);
-    var ctx = cvs.getContext("2d");
-    var img = $("<img/>").attr("src", "media/arrow.png");
+    var cvs = $(element).find('.animation').get(0);
+    var ctx = cvs.getContext('2d');
+    var img = $('<img/>').attr('src', 'media/arrow.png');
     var count = 0;
     var fn = function () {
       cvs.width = $(element).width() * ratio;
@@ -140,27 +143,27 @@ var _COLOR = "#FFFFFF";
 
     while (density--) {
       stack.push({
-        "position": {
-          "x": Math.round(Math.random() * 1000000) % ($(element).width() * ratio),
-          "y": Math.round(Math.random() * 1000000) % ($(element).height() * ratio)
+        'position': {
+          'x': Math.round(Math.random() * 1000000) % ($(element).width() * ratio),
+          'y': Math.round(Math.random() * 1000000) % ($(element).height() * ratio)
         },
-        "speed": {
-          "x": Math.round(Math.random() * 1000000) % (50 * ratio),
-          "y": Math.round(Math.random() * 1000000) % (50 * ratio)
+        'speed': {
+          'x': Math.round(Math.random() * 1000000) % (50 * ratio),
+          'y': Math.round(Math.random() * 1000000) % (50 * ratio)
         }
       });
     }
     fn();
     setInterval(function () {fn();}, 1000 / fps);
-    $(window).bind("load resize scroll", function (event) {
+    $(window).bind('load resize scroll', function (event) {
       var opacity = Math.round((1 - 2 / $(element).height() * $(window).scrollTop()) * 100) / 100;
-      var margin = Math.round($(element).height() / 2 - $(element).find(".content").height() / 2 - $(window).scrollTop() / 4);
+      var margin = Math.round($(element).height() / 2 - $(element).find('.content').height() / 2 - $(window).scrollTop() / 4);
       
-      $(element).find(".content").css({"margin": margin + "px auto 0 auto", "opacity": opacity >= 0 ? opacity : 0});
-      $(element).find(".animation").css({"opacity": opacity >= 0 ? opacity : 0});
+      $(element).find('.content').css({'margin': margin + 'px auto 0 auto', 'opacity': opacity >= 0 ? opacity : 0});
+      $(element).find('.animation').css({'opacity': opacity >= 0 ? opacity : 0});
     });
     return (this);
-  }
+  };
 })(jQuery);
 
 (function ($) {
@@ -169,21 +172,21 @@ var _COLOR = "#FFFFFF";
     var delay = 5000;
     var current = 0;
     var fn = function () {
-      $(element).find(".slide").each(function (index) {
+      $(element).find('.slide').each(function (index) {
         var selection = this;
         
-        $(selection).css({"z-index": (index == current ? 1000 : 0), "opacity": (index == current ? 0.5 : 0)});
+        $(selection).css({'z-index': (index === current ? 1000 : 0), 'opacity': (index === current ? 0.5 : 0)});
       });
       current = current + 1;
-      current = current == $(element).find(".slide").size() ? 0 : current;
+      current = current === $(element).find('.slide').size() ? 0 : current;
     };
 
-    $(window).bind("load", function (event) {
+    $(window).bind('load', function (event) {
       fn();
       setInterval(function () {fn();}, delay);
     });
     return (this);
-  }
+  };
 })(jQuery);
 
 (function ($) {
@@ -194,7 +197,7 @@ var _COLOR = "#FFFFFF";
       var selection = this;
       var opacity = Math.round((1 / $(selection).offset().top) * ($(window).height() / 2 + $(window).scrollTop()) * 100) / 100;
       
-      $(selection).find(".effect").css({"opacity": opacity >= 1 ? 1 : 0});
+      $(selection).find('.effect').css({'opacity': opacity >= 1 ? 1 : 0});
     });
     return (this);
   };
@@ -203,10 +206,10 @@ var _COLOR = "#FFFFFF";
 $(function () {
   $(document).spinload();
   $(document).placeholder();
-  $(window).bind("load resize", function (event) {
-    $(".interface").css({"margin": $(window).height() + "px 0 0 0"});
+  $(window).bind('load resize', function (event) {
+    $('.interface').css({'margin': $(window).height() + 'px 0 0 0'});
   });
-  $(window).bind("load resize scroll", function (event) {
-    $(".interface").effect();
+  $(window).bind('load resize scroll', function (event) {
+    $('.interface').effect();
   });
 });

@@ -507,13 +507,13 @@
 /*** RIBBON ***/
 
 .ribbon {
-	margin-top: 20px;
+	margin-top: 1px;
     background-color: #182732;
     overflow: hidden;
     white-space: nowrap;
     position: fixed;
-    right: -70px;
-    top: 70px;
+    right: -75px;
+    top: 65px;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -535,7 +535,7 @@
     font: 95.25% OpenSans, Helvetica, Arial;
     font-weight: bold;
     margin: 3px 0;
-    padding: 5px 85px;
+    padding: 1px 63px;
     text-align: center;
     text-decoration: none;
     text-shadow: 0 0 5px #282828;

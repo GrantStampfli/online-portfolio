@@ -1,7 +1,7 @@
 'use strict';
 
-var _DENSITY = 20;
-var _FPS = 30;
+var _DENSITY = 30;
+var _FPS = 90;
 var _OPACITY = 0.25;
 var _COLOR = '#FFFFFF';
 
@@ -169,7 +169,7 @@ var _COLOR = '#FFFFFF';
 (function ($) {
   $.fn.anim = function (opts) {
     var element = this;
-    var delay = 5000;
+    var delay = 9000;
     var current = 0;
     var fn = function () {
       $(element).find('.slide').each(function (index) {

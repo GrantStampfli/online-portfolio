@@ -1034,6 +1034,7 @@
     display: inline-block;
     margin: 20px;
 }
+
 .ch-item {
     width: 100%;
     height: 100%;
@@ -1046,17 +1047,19 @@
         0 1px 2px rgba(0,0,0,0.1);
     transition: all 0.4s ease-in-out;
 }
-.ch-img-1 { 
-    background-image: url(../images/1.jpg);
+
+.ch-img-1 {
+    background: url(../media/tech-js.png);
 }
- 
-.ch-img-2 { 
-    background-image: url(../images/2.jpg);
+
+.ch-img-2 {
+    background: url(../media/tech-html.png);
 }
- 
-.ch-img-3 { 
-    background-image: url(../images/3.jpg);
+
+.ch-img-3 {
+    background: url(../media/tech-css.png);
 }
+
 .ch-info {
     position: absolute;
     background: rgba(63,147,147, 0.8);
@@ -1068,6 +1071,7 @@
     transition: all 0.4s ease-in-out;
     transform: scale(0);
 }
+
 .ch-info h3 {
     color: #fff;
     text-transform: uppercase;
@@ -1081,6 +1085,7 @@
         0 0 1px #fff, 
         0 1px 2px rgba(0,0,0,0.3);
 }
+
 .ch-info p {
     color: #fff;
     padding: 10px 5px;
@@ -1091,6 +1096,7 @@
     opacity: 0;
     transition: all 1s ease-in-out 0.4s;
 }
+
 .ch-info p a {
     display: block;
     color: rgba(255,255,255,0.7);
@@ -1106,15 +1112,18 @@
 .ch-info p a:hover {
     color: rgba(255,242,34, 0.8);
 }
+
 .ch-item:hover {
     box-shadow: 
         inset 0 0 0 1px rgba(255,255,255,0.1),
         0 1px 2px rgba(0,0,0,0.1);
 }
+
 .ch-item:hover .ch-info {
     transform: scale(1);
     opacity: 1;
 }
+
 .ch-item:hover .ch-info p {
     opacity: 1;
 }

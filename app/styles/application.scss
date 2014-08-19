@@ -803,7 +803,7 @@
     background: transparent;
     background-size: auto;
     opacity: 1.00;
-    font: 400 20px/30px OpenSans, Helvetica, Arial;
+    font: 700 22px/30px OpenSans, Helvetica, Arial;
     color: #000000;
     text-align: center;
     text-decoration: none;
@@ -825,7 +825,7 @@
     background: transparent;
     background-size: auto;
     opacity: 1.00;
-    font: 400 18px/30px 'Open Sans', 'Helvetica Neue', 'Arial';
+    font: 400 16px/25px 'Open Sans', 'Helvetica Neue', 'Arial';
     color: #000000;
     text-align: center;
     text-decoration: none;
@@ -871,23 +871,6 @@
     opacity: 1.00;
 }
 
-#portfolio .content .wrap .cvr .picture {
-    z-index: 0;
-    overflow: visible;
-    position: relative;
-    display: block;
-    height: 100px;
-    width: 100px;
-    margin: 0 auto 0 auto;
-    padding: 0;
-    outline: 0;
-    border: 0;
-    border-radius: 50px 50px 50px 50px;
-    background: transparent;
-    background-size: auto;
-    opacity: 1.00;
-}
-
 .ch-grid {
     margin: 20px 0 0 0;
     padding: 0;
@@ -928,7 +911,10 @@
 }
 
 .ch-img-1 {
-    background: url(../media/tech-js.png);
+    background: url(../media/swap-app.png);
+    background-repeat: repeat-y;
+    background-position: center center;
+
 }
 
 .ch-img-2 {

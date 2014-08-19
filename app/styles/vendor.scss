@@ -168,6 +168,12 @@ body {
 
     .size-6.responsive, .size-6.responsive:hover, .size-6.responsive:active, .size-6.responsive:focus {
         width: 100.00%;
+        @media only screen and (max-width : 800px) {
+          width: 50.00%;
+        }
+        @media only screen and (max-width : 522px) {
+           width: 100.00%;
+        }
     }
 
     .size-7.responsive, .size-7.responsive:hover, .size-7.responsive:active, .size-7.responsive:focus {

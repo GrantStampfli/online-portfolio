@@ -430,7 +430,7 @@
     border: 0;
     border-radius: 70px 70px 0 0;
     background: #FFFFFF;
-    opacity: 1;
+    opacity: .85;
     @media only screen and (max-width : 800px) {
         border-radius: 30px 30px 0 0;
     }
@@ -443,7 +443,7 @@
     display: block;
     height: auto;
     width: auto;
-    margin: 100px auto 100px auto;
+    margin: 100px auto 35px auto;
     padding: 0;
     outline: 0;
     border: 0;
@@ -526,7 +526,7 @@
     outline: 0;
     border: 0;
     border-radius: 0;
-    background: transparent url(../media/pattern-dark.png) scroll repeat center top;
+    background: transparent url(../media/pattern-lightB.png) scroll repeat center top;
     background-size: auto;
     opacity: .85;
 }
@@ -599,7 +599,7 @@
     background: transparent;
     opacity: 1;
     font: 700 30px/50px OpenSans, Helvetica, Arial;
-    color: #FFFFFF;
+    color: rgb(0, 0, 0);
     text-align: center;
     text-decoration: none;
     text-shadow: none;
@@ -621,7 +621,7 @@
     background-size: auto;
     opacity: 1.00;
     font: 400 20px/30px 'Open Sans', 'Helvetica Neue', 'Arial';
-    color: #FFFFFF;
+    color: rgb(0, 0, 0);
     text-align: center;
     text-decoration: none;
     text-shadow: none;
@@ -666,7 +666,7 @@
     background-size: auto;
     opacity: 1.00;
     font: 400 14px/20px 'Open Sans', 'Helvetica Neue', 'Arial';
-    color: rgb(72,75,75);
+    color: rgb(0, 0, 0);
     text-align: center;
     text-decoration: none;
     text-shadow: none;
@@ -744,7 +744,7 @@
     outline: 0;
     border: 0;
     border-radius: 0;
-    background: transparent url(../media/pattern-light.png) scroll repeat center top;
+    background: transparent url(../media/pattern-darkB.png) scroll repeat center top;
     background-size: auto;
     opacity: .85;
 }
@@ -904,9 +904,6 @@
     overflow: hidden;
     position: relative;
     cursor: default;
-    box-shadow: 
-        inset 0 0 0 2px rgb(0,153,204),
-        0 1px 2px rgba(0,0,0,0.1);
     transition: all 0.4s ease-in-out;
 }
 

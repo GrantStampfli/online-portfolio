@@ -865,7 +865,7 @@
     outline: 0;
     border: 0;
     border-radius: 0;
-    background: transparent url(../media/pattern-dark.png) scroll repeat center top;
+    background: transparent url(../media/pattern-light.png) scroll repeat center top;
     background-size: auto;
     opacity: .85;
 }
@@ -903,7 +903,7 @@
     background-size: auto;
     opacity: 1.00;
     font: 300 60px/60px 'Open Sans', 'Helvetica Neue', 'Arial';
-    color: #FFFFFF;
+    color: #000000;
     text-align: center;
     text-decoration: none;
     text-shadow: none;
@@ -925,7 +925,7 @@
     background-size: auto;
     opacity: 1.00;
     font: 400 20px/30px 'Open Sans', 'Helvetica Neue', 'Arial';
-    color: #FFFFFF;
+    color: #000000;
     text-align: center;
     text-decoration: none;
     text-shadow: none;
@@ -947,7 +947,7 @@
     background-size: auto;
     opacity: 1.00;
     font: 400 16px/20px 'Open Sans', 'Helvetica Neue', 'Arial';
-    color: #FFFFFF;
+    color: #000000;
     text-align: center;
     text-decoration: none;
     text-shadow: none;
@@ -969,7 +969,7 @@
     background-size: auto;
     opacity: 1.00;
     font: 400 14px/20px 'Open Sans', 'Helvetica Neue', 'Arial';
-    color: #FFFFFF;
+    color: #000000;
     text-align: center;
     text-decoration: none;
     text-shadow: none;
@@ -1029,10 +1029,10 @@
 }
  
 .ch-grid li {
-    width: 220px;
-    height: 220px;
+    width: 300px;
+    height: 300px;
     display: inline-block;
-    margin: 20px;
+    margin: -25px;
 }
 
 .ch-item {
@@ -1043,7 +1043,7 @@
     position: relative;
     cursor: default;
     box-shadow: 
-        inset 0 0 0 16px rgba(255,255,255,0.6),
+        inset 0 0 0 5px rgba(255,255,255,0.6),
         0 1px 2px rgba(0,0,0,0.1);
     transition: all 0.4s ease-in-out;
 }
@@ -1070,6 +1070,7 @@
     opacity: 0;
     transition: all 0.4s ease-in-out;
     transform: scale(0);
+    box-shadow: hidden;
 }
 
 .ch-info h3 {
@@ -1079,7 +1080,7 @@
     font-size: 22px;
     margin: 0 30px;
     padding: 45px 0 0 0;
-    height: 140px;
+    height: 130px;
     font-family: 'Open Sans', Arial, sans-serif;
     text-shadow: 
         0 0 1px #fff, 
@@ -1088,25 +1089,34 @@
 
 .ch-info p {
     color: #fff;
-    padding: 10px 5px;
+    padding: 10px 5px 0px;
+    margin: 0 30px -30px;
+    font-size: 18px;
+    opacity: 1;
+    letter-spacing: 2px;
     font-style: italic;
-    margin: 0 30px;
-    font-size: 12px;
-    border-top: 1px solid rgba(255,255,255,0.5);
-    opacity: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-shadow: 
+        0 0 1px #fff, 
+        0 1px 2px rgba(0,0,0,0.3);
+    border-top: 2px solid rgba(255,255,255,0.5);
     transition: all 1s ease-in-out 0.4s;
 }
 
 .ch-info p a {
     display: block;
-    color: rgba(255,255,255,0.7);
-    font-style: normal;
     font-weight: 700;
-    text-transform: uppercase;
-    font-size: 9px;
-    letter-spacing: 1px;
+    font-size: 13px;
     padding-top: 4px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin: 0 30px;
     font-family: 'Open Sans', Arial, sans-serif;
+    text-shadow: 
+        0 0 1px #fff, 
+        0 1px 2px rgba(0,0,0,0.3);
 }
  
 .ch-info p a:hover {

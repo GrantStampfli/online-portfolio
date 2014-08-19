@@ -391,7 +391,7 @@
     -webkit-box-shadow: 0 0 10px #888;
     -moz-box-shadow: 0 0 10px #888;
     box-shadow: 0 0 10px #888;
-    @media only screen and (max-width : 800px) {
+    @media only screen and (max-width : 520px) {
 		display: none;
 	}
 }
@@ -404,7 +404,7 @@
     font: 95.25% OpenSans, Helvetica, Arial;
     font-weight: bold;
     margin: 3px 0;
-    padding: 1px 63px;
+    padding: 5px 70px;
     text-align: center;
     text-decoration: none;
     text-shadow: 0 0 5px #282828;

@@ -13,4 +13,3 @@
 ---
 
 [![Github Octodex](https://octodex.github.com/images/daftpunktocat-thomas.gif")](http://resume.grantstampfli.com)
---

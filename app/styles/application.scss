@@ -783,7 +783,7 @@
     background-size: auto;
     opacity: 1.00;
     font: 700 32px/30px OpenSans, Helvetica, Arial;
-    color: #000000;
+    color: #fff;
     text-align: center;
     text-decoration: none;
     text-shadow: none;
@@ -805,7 +805,7 @@
     background-size: auto;
     opacity: 1.00;
     font: 700 22px/30px OpenSans, Helvetica, Arial;
-    color: #000000;
+    color: #fff;
     text-align: center;
     text-decoration: none;
     text-shadow: none;
@@ -827,7 +827,7 @@
     background-size: auto;
     opacity: 1.00;
     font: 400 16px/25px 'Open Sans', 'Helvetica Neue', 'Arial';
-    color: #000000;
+    color: #fff;
     text-align: center;
     text-decoration: none;
     text-shadow: none;
@@ -849,7 +849,7 @@
     background-size: auto;
     opacity: 1.00;
     font: 400 14px/30px 'Open Sans', 'Helvetica Neue', 'Arial';
-    color: #000000;
+    color: #fff;
     text-align: center;
     text-decoration: none;
     text-shadow: none;
@@ -1167,6 +1167,7 @@
     text-align: center;
     text-decoration: none;
     text-shadow: none;
+    list-style: none;
 }
 
 /*** EXP ***/
@@ -1181,7 +1182,7 @@
     display: block;
     height: auto;
     width: auto;
-    margin: 0px auto 100px auto;
+    margin: 50px auto 10px auto;
     padding: 0;
     outline: 0;
     border: 0;

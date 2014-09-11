@@ -329,6 +329,9 @@
     border-radius: 50%;
     background: transparent;
     opacity: 1;
+    @media only screen and (max-width : 960px) {
+        margin: 50px auto 10px auto;
+    }
 }
 
 #gallery .content .wrap .name {
@@ -391,7 +394,7 @@
     -webkit-box-shadow: 0 0 10px #888;
     -moz-box-shadow: 0 0 10px #888;
     box-shadow: 0 0 10px #888;
-    @media only screen and (max-width : 520px) {
+    @media only screen and (max-width : 960px) {
 		display: none;
 	}
 }

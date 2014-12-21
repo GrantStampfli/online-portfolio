@@ -461,11 +461,13 @@
     position: relative;
     display: block;
     height: auto;
-    width: 500px;
+    width: auto;
     margin: 10px 10px 10px 10px;
     padding: 0;
     outline: 0;
     border: 0;
+    background: transparent url(../media/strip.png) scroll repeat-x center center;
+    border-radius: 25px;
     opacity: 1;
 }
 
@@ -1039,7 +1041,7 @@
     outline: 0;
     border: 0;
     border-radius: 25px;
-    background: transparent url(../media/strip.png) scroll repeat-x center center;
+    // background: transparent url(../media/strip.png) scroll repeat-x center center;
     opacity: .5;
 }
 
@@ -1236,14 +1238,14 @@ ul li{
     display: block;
     height: auto;
     width: auto;
-    margin: -20px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
     padding: 0;
     outline: 0;
     border: 0;
     border-radius: 0;
     background: transparent;
     opacity: 1;
-    font: 400 30px/20px OpenSans, Helvetica, Arial;
+    font: 400 30px/25px OpenSans, Helvetica, Arial;
     color: #000000;
     text-align: center;
     text-decoration: none;
@@ -1339,11 +1341,10 @@ ul li{
 	border-radius: 0;
 	background: transparent;
 	opacity: 1;
-	font: 700 50px/30px OpenSans, Helvetica, Arial;
-	color: #FFFFFF;
-	text-align: center;
-	text-decoration: none;
-	text-shadow: none;
+    font: 400 70px/50px Voltaire, OpenSans, Helvetica, Arial;
+    text-shadow: 1.5px 3px 1.5px #4b4b4b;
+    color: #fff;
+    text-align: center;
 }
 
 #contact .content .wrap .data {

@@ -14,13 +14,21 @@ var SERVER_PORT = process.env.PORT || 9000;
 var LIVERELOAD_PORT = process.env.LIVERELOAD_PORT || 35729;
 var lr = require('tiny-lr')();
 
-var status = {
+var program = {
   exitCode: 0,
   errors: [],
   recordError: function(e) {
-    status.exitCode = 1;
-    status.errors.push(e);
+    process.stderr.write(colors.red(e) + '\n\x07');
+    program.exitCode = 1;
+    program.errors.push(e);
+    if (this.emit) {
+      this.emit('end');
+    }
   }
+};
+
+var plumber = function(options) {
+  return $.plumber(_.extend({ errorHandler: program.recordError }, options));
 };
 
 /*
@@ -179,7 +187,7 @@ tasks['.scripts:app'] = function(options) {
 
   if (opts.scripts) {
     streams.push(gulp.src(paths('src.app.scripts.entry', opts), { read: false })
-      .pipe($.plumber())
+      .pipe(plumber())
       .pipe(browserify()));
   }
 
@@ -193,7 +201,7 @@ tasks['.scripts:app'] = function(options) {
 
   stream = stream
     .pipe(gulp.dest(paths('dest.app.scripts', opts)))
-    .pipe($.livereload(LIVERELOAD_PORT, { auto: false, silent: true }));
+    .pipe($.livereload(lr, { auto: false, silent: true }));
 
   return stream;
 };
@@ -217,7 +225,7 @@ tasks['.styles:app'] = function(options) {
   }
 
   var stream = gulp.src(src)
-    .pipe($.plumber())
+    .pipe(plumber())
     .pipe($.sass());
 
   if (distribution) {
@@ -228,7 +236,7 @@ tasks['.styles:app'] = function(options) {
 
   stream = stream
     .pipe(gulp.dest(paths('dest.app.styles', opts)))
-    .pipe($.livereload(lr));
+    .pipe($.livereload(lr, { auto: false, silent: false }));
 
   return stream;
 };
@@ -252,7 +260,7 @@ tasks['.static:app'] = function(options) {
       .pipe(imageFilter.restore())
       .pipe(gulp.dest(paths('dest.app.static', opts)));
   }
-  return stream.pipe($.livereload(lr));
+  return stream.pipe($.livereload(lr, { auto: false, silent: false }));
 };
 
 tasks['.test:app'] = function(options) {
@@ -283,13 +291,12 @@ tasks['.test:app'] = function(options) {
   }
 
   return gulp.src(sources)
-    .pipe($.plumber())
+    .pipe(plumber())
     .pipe($.karma({
       configFile: 'karma.conf.js',
       preprocessors: preprocessors,
       action: (opts.coverage ? 'run' : 'watch')
-    }))
-    .on('error', status.recordError);
+    }));
 };
 
 tasks['.clean'] = function(options) {
@@ -400,7 +407,7 @@ gulp.task('test', ['.clean:dev'], function() {
 
 gulp.task('test:coverage', ['.clean:dev'], function() {
   gulp.start('lint', '.test:app:dev:coverage', function() {
-    process.exit(status.exitCode);
+    process.exit(program.exitCode);
   });
 });
 
